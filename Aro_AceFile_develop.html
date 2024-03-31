@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Aro_AceFile</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="img_Aro_AceFile/favicon.ico"> </head>
+  <body onload="drawcanvas();" style="background-image: url(img_Aro_AceFile/background.png);">
+    <header>
+      <p class="header">#Aro_AceFile </p>
+    </header>
+    <div class="container"> <img class="rogo" src="img_Aro_AceFile/rogo.png" alt="ロゴ画像">
+      <p class="koumoku">利用方法</p>
+      <p>
+        ・Twitterに掲載する際は#Aro_AceFileのタグとこのサイトのURL(https://ace-file.com/Aro_AceFile)をご記載ください！<br/>
+        ・更新やブラウザバックを行うと入力中のデータが消えます。<br/>
+        ・項目ごとに入力できる文字数の制限があります。<br/>
+        ・メモは補足欄としてご利用ください。<br/>
+        ・詳しい利用方法や用語の定義、説明は<a target="_blank" href="https://nijikou.com">にじいろ学校のHP(新しいウィンドウで開く)</a>からご確認ください。<br/>
+        <br/>
+        ・<a href="https://ace-file.com/AceFile">#AceFile2（2020年作）はこちら</a>
+      </p>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <form name="form1" action="index.html">
+
+        <h1>【プロフィール】</h1>
+
+        <p class="koumoku">呼ばれたい名前(11文字)</p>
+        <input type="text" title="呼ばれたい名前" name="name" maxlength="11">
+
+        <p class="koumoku">住んでいるところ(6文字)</p>
+        <input type="text" title="住んでいるところ" name="place" maxlength="6">
+
+        <p class="koumoku">年代(9文字)</p>
+        <input type="text" title="年代" name="old" maxlength="9">
+
+        <p class="koumoku">セクシャリティ・性自認(46文字)</p>
+        <textarea type="text" class="textarea_seku" name="sexuality" placeholder="改行は自動的に削除されます" maxlength="46"></textarea>
+
+        <p class="koumoku">＜こんな人と繋がりたい＞</p>
+        <label><input type="checkbox" name="kon" class="checkbox" value="1">セクシャリティが似ている</option></label><br>
+        <label><input type="checkbox" name="kon" class="checkbox" value="2">パートナー観が似ている</option></label><br>
+        <label><input type="checkbox" name="kon" class="checkbox" value="3">住んでいるところが近い</option></label><br>
+        <label><input type="checkbox" name="kon" class="checkbox" value="4">年代が近い</option></label><br>
+        <label><input type="checkbox" name="kon" class="checkbox" value="5">気にしない</option></label><br>
+        <p>メモ(63文字)</p>
+        <textarea type="text" class="textarea_konmemo" name="kon_memo" placeholder="改行は自動的に削除されます" maxlength="63"></textarea>
+
+        <p class="koumoku">＜好きなもの・趣味＞(84文字)</p>
+        <textarea type="text" class="textarea_fav" name="favorite" placeholder="改行は自動的に削除されます" maxlength="84"></textarea>
+
+        <p class="koumoku">ひとこと(132文字)</p>
+        <textarea type="text" class="textarea_hitokoto" name="hitokoto" placeholder="改行は自動的に削除されます" maxlength="132"></textarea>
+
+        <h1>【恋愛的・性的惹かれについて】</h1>
+
+        <p class="koumoku">他の人に恋愛感情を抱きますか？</p>
+        <div class="flex">
+          <div class="inflex_label">
+            <p class="rangelabel">はい</p>
+          </div>
+          <div class="inflex_range">
+            <input type="range" list="list1" name="hikare_1">
+            <datalist id="list1">
+              <option value="50">
+              </datalist>
+            </div>
+            <div class="inflex_label">
+              <p class="rangelabel">いいえ</p>
+            </div>
+          </div>
+
+          <p class="memo">メモ(20文字)</p>
+          <input type="text" title="メモ" name="hikare_1_memo" maxlength="20">
+
+          <div class="box">
+            <p class="case">抱く場合</h2>
+              <p class="koumoku">どの性別に対してですか？</p>
+              <label><input type="radio" name="hikare_1_1" class="radio" value="1">男性のみ</option></label><br>
+              <label><input type="radio" name="hikare_1_1" class="radio" value="2">女性のみ</option></label><br>
+              <label><input type="radio" name="hikare_1_1" class="radio" value="3">男女どちらも</option></label><br>
+              <label><input type="radio" name="hikare_1_1" class="radio" value="4">全ての性別</option></label><br>
+              <label><input type="radio" name="hikare_1_1" class="radio" value="5">性別は関係ない</option></label><br>
+              <label><input type="radio" name="hikare_1_1" class="radio" value="その他">その他(10文字)</option></label>
+              <input type="text" title="その他" name="hikare_1_1_other" maxlength="10">
+              <p class="memo">メモ(20文字)</p>
+              <input type="text" title="メモ" name="hikare_1_1_memo" maxlength="20">
+              <p class="koumoku">その相手</p>
+              <label><input type="checkbox" name="hikare_1_2" class="checkbox" value="1">信頼している相手のみ</option></label><br>
+              <label><input type="checkbox" name="hikare_1_2" class="checkbox" value="2">自分は惹かれるが、相手から返してほしいとは思わない</option></label><br>
+              <label><input type="checkbox" name="hikare_1_2" class="checkbox" value="3">どちらも当てはまらない</option></label><br>
+              <p class="memo">メモ(20文字)</p>
+              <input type="text" title="メモ" name="hikare_1_2_memo" maxlength="20">
+            </div>
+
+            <p class="koumoku">他の人に性的な魅力を感じますか？</p>
+            <div class="flex">
+              <div class="inflex_label">
+                <p class="rangelabel">はい</p>
+              </div>
+              <div class="inflex_range">
+                <input type="range" list="list1" name="hikare_2">
+                <datalist id="list1">
+                  <option value="50">
+                  </datalist>
+                </div>
+                <div class="inflex_label">
+                  <p class="rangelabel">いいえ</p>
+                </div>
+              </div>
+              <p class="memo">メモ(20文字)</p>
+              <input type="text" title="メモ" name="hikare_2_memo" maxlength="20">
+
+              <div class="box">
+                <p class="case">感じる場合</h2>
+                  <p class="koumoku">どの性別に対してですか？</p>
+                  <label><input type="radio" name="hikare_2_1" class="radio" value="1">男性のみ</option></label><br>
+                  <label><input type="radio" name="hikare_2_1" class="radio" value="2">女性のみ</option></label><br>
+                  <label><input type="radio" name="hikare_2_1" class="radio" value="3">男女どちらも</option></label><br>
+                  <label><input type="radio" name="hikare_2_1" class="radio" value="4">全ての性別</option></label><br>
+                  <label><input type="radio" name="hikare_2_1" class="radio" value="5">性別は関係ない</option></label><br>
+                  <label><input type="radio" name="hikare_2_1" class="radio" value="その他">その他(10文字)</option></label>
+                  <input type="text" title="その他" name="hikare_2_1_other" maxlength="10">
+                  <p class="memo">メモ(20文字)</p>
+                  <input type="text" title="メモ" name="hikare_2_1_memo" maxlength="20">
+                  <p class="koumoku">その相手と性的な行為をしたいと思いますか？</p>
+                  <div class="flex">
+                    <div class="inflex_label">
+                      <p class="rangelabel">はい</p>
+                    </div>
+                    <div class="inflex_range">
+                      <input type="range" list="list1" name="hikare_2_2">
+                    </div>
+                    <div class="inflex_label">
+                      <p class="rangelabel">いいえ</p>
+                    </div>
+                  </div>
+                  <p class="memo">メモ(20文字)</p>
+                  <input type="text" title="メモ" name="hikare_2_2_memo" maxlength="20">
+                  <p class="koumoku">その相手</p>
+                  <label><input type="checkbox" name="hikare_2_3" class="checkbox" value="1">信頼している相手のみ</option></label><br>
+                  <label><input type="checkbox" name="hikare_2_3" class="checkbox" value="2">自分は惹かれるが、相手から返してほしいとは思わない</option></label><br>
+                  <label><input type="checkbox" name="hikare_2_3" class="checkbox" value="3">どちらも当てはまらない</option></label><br>
+                  <p class="memo">メモ(20文字)</p>
+                  <input type="text" title="メモ" name="hikare_2_3_memo" maxlength="20">
+                </div>
+
+                <h1>【パートナーについて】</h1>
+
+                <p class="koumoku">望むパートナー関係は？</p>
+                <label><input type="checkbox" name="pa_1" class="checkbox" value="1">恋愛関係も性的関係もあるパートナー</option></label><br>
+                <label><input type="checkbox" name="pa_1" class="checkbox" value="2">恋愛関係があり、性的関係がないパートナー</option></label><br>
+                <label><input type="checkbox" name="pa_1" class="checkbox" value="3">恋愛関係がなく、性的関係があるパートナー</option></label><br>
+                <label><input type="checkbox" name="pa_1" class="checkbox" value="4">恋愛関係も性的関係もないパートナー</option></label><br>
+                <label><input type="checkbox" name="pa_1" class="checkbox" value="5">どれも望まない</option></label><br>
+                <p class="memo">メモ(20文字)</p>
+                <input type="text" title="メモ" name="pa_1_memo" maxlength="20">
+
+                <p class="koumoku">他の人との同居を考えていますか？</p>
+                <div class="flex">
+                  <div class="inflex_label">
+                    <p class="rangelabel">はい</p>
+                  </div>
+                  <div class="inflex_range">
+                    <input type="range"  list="list1" name="pa_2">
+                  </div>
+                  <div class="inflex_label">
+                    <p class="rangelabel">いいえ</p>
+                  </div>
+                </div>
+                <p class="memo">メモ(20文字)</p>
+                <input type="text" title="メモ" name="pa_2_memo" maxlength="20">
+
+                <p class="koumoku">結婚を考えていますか？</p>
+                <div class="flex">
+                  <div class="inflex_label">
+                    <p class="rangelabel">はい</p>
+                  </div>
+                  <div class="inflex_range">
+                    <input type="range"  list="list1" name="pa_3">
+                  </div>
+                  <div class="inflex_label">
+                    <p class="rangelabel">いいえ</p>
+                  </div>
+                </div>
+                <p class="memo">メモ(20文字)</p>
+                <input type="text" title="メモ" name="pa_3_memo" maxlength="20">
+
+                <p class="koumoku">子供を持つことを考えていますか？</p>
+                <div class="flex">
+                  <div class="inflex_label">
+                    <p class="rangelabel">はい</p>
+                  </div>
+                  <div class="inflex_range">
+                    <input type="range"  list="list1" name="pa_4">
+                  </div>
+                  <div class="inflex_label">
+                    <p class="rangelabel">いいえ</p>
+                  </div>
+                </div>
+                <p class="memo">メモ(20文字)</p>
+                <input type="text" title="メモ" name="pa_4_memo" maxlength="20">
+
+                <p class="koumoku">パートナー関係における譲れない条件などがあればお書きください(100文字)</p>
+                <textarea type="text" class="textarea_pa" name="pa_5" placeholder="改行は自動的に削除されます" maxlength="100" wrap="soft"></textarea>
+
+                <h1>【Twitterについて】</h1>
+
+                <p class="koumoku">主な目的は？</p>
+                <label><input type="checkbox" name="twi_1" class="checkbox" value="1">交流</option></label><br>
+                <label><input type="checkbox" name="twi_1" class="checkbox" value="2">情報収集</option></label><br>
+                <label><input type="checkbox" name="twi_1" class="checkbox" value="3">情報発信</option></label><br>
+                <label><input type="checkbox" name="twi_1" class="checkbox" value="4">その他</option></label><br>
+                <input type="text" title="その他" name="twi_1_other" maxlength="16">
+                <p class="memo">メモ(20文字)</p>
+                <input type="text" title="メモ" name="twi_1_memo" maxlength="20">
+
+                <p class="koumoku">繋がりたい人は、何してほしい？</p>
+                <label><input type="checkbox" name="twi_2" class="checkbox" value="1">いいね</option></label><br>
+                <label><input type="checkbox" name="twi_2" class="checkbox" value="2">リプ</option></label><br>
+                <label><input type="checkbox" name="twi_2" class="checkbox" value="3">RT</option></label><br>
+                <label><input type="checkbox" name="twi_2" class="checkbox" value="4">DM</option></label><br>
+                <p class="memo">メモ(20文字)</p>
+                <input type="text" title="メモ" name="twi_2_memo" maxlength="20">
+
+                <p class="koumoku">他の人の恋愛話を聞くのは苦手ですか？</p>
+                <div class="flex">
+                  <div class="inflex_label">
+                    <p class="rangelabel">はい</p>
+                  </div>
+                  <div class="inflex_range">
+                    <input type="range"  list="list1" name="twi_3">
+                  </div>
+                  <div class="inflex_label">
+                    <p class="rangelabel">いいえ</p>
+                  </div>
+                </div>
+                <p class="memo">メモ(20文字)</p>
+                <input type="text" title="メモ" name="twi_3_memo" maxlength="20">
+
+                <p class="koumoku">自分の恋愛話を聞かれるのは苦手ですか？</p>
+                <div class="flex">
+                  <div class="inflex_label">
+                    <p class="rangelabel">はい</p>
+                  </div>
+                  <div class="inflex_range">
+                    <input type="range"  list="list1" name="twi_4">
+                  </div>
+                  <div class="inflex_label">
+                    <p class="rangelabel">いいえ</p>
+                  </div>
+                </div>
+                <p class="memo">メモ(20文字)</p>
+
+                <input type="text" title="メモ" name="twi_4_memo" maxlength="20">
+                <p class="koumoku">他人の性的な話を聞くのは苦手ですか？</p>
+                <div class="flex">
+                  <div class="inflex_label">
+                    <p class="rangelabel">はい</p>
+                  </div>
+                  <div class="inflex_range">
+                    <input type="range"  list="list1" name="twi_5">
+                  </div>
+                  <div class="inflex_label">
+                    <p class="rangelabel">いいえ</p>
+                  </div>
+                </div>
+                <p class="memo">メモ(20文字)</p>
+                <input type="text" title="メモ" name="twi_5_memo" maxlength="20">
+
+                <p class="koumoku">自分の性的な話を聞かれるのは苦手ですか？</p>
+                <div class="flex">
+                  <div class="inflex_label">
+                    <p class="rangelabel">はい</p>
+                  </div>
+                  <div class="inflex_range">
+                    <input type="range"  list="list1" name="twi_6">
+                  </div>
+                  <div class="inflex_label">
+                    <p class="rangelabel">いいえ</p>
+                  </div>
+                </div>
+                <p class="memo">メモ(20文字)</p>
+                <input type="text" title="メモ" name="twi_6_memo" maxlength="20">
+
+                <p class="koumoku">フォローする際に知っておいてほしいことなど<br/>あればご記入ください(20文字)</p>
+                <input type="text" name="twi_7" maxlength="20">
+
+
+                <div class="btnbox"> <button class="btn" type="button" onclick="fontloaded();display()">完成！</button> </div>
+              </form>
+              <div id="display" style="display:none">
+                <p class="koumoku">内容を変更したいときは変更後「完成！」ボタンを再び押して下さい <br>ダウンロードボタンが機能しない場合画像を右クリックまたは長押しから画像を保存してください </p>
+                <!-- いちまいめ --><canvas id="can1" width="820" height="1440" style="background-color: #999;">お使いのブラウザには対応しておりません</canvas>
+                <div class="btnbox"> <button class="btn" onclick="download('can1','hiddenLink1')">1枚目をダウンロード</button> <a id="hiddenLink1" download="img_Aro_AceFile/AceFile1.png"></a>
+                  <!-- みえない りんく -->
+                </div>
+                <!-- にまいめ --><canvas id="can2" width="820" height="1440" style="background-color: #999;"></canvas>
+                <div class="btnbox"> <button class="btn" onclick="download('can2','hiddenLink2')">2枚目をダウンロード</button> <a id="hiddenLink2" download="img_Aro_AceFile/AceFile2.png"></a>
+                  <!-- みえない りんく -->
+                </div>
+                <!-- さんまいめ --><canvas id="can3" width="820" height="1440" style="background-color: #999;"></canvas>
+                <div class="btnbox"> <button class="btn" onclick="download('can3','hiddenLink3')">3枚目をダウンロード</button> <a id="hiddenLink3" download="img_Aro_AceFile/AceFile3.png"></a>
+                  <!-- みえない りんく -->
+                </div>
+                <!-- いちまいめ --><canvas id="can4" width="820" height="1440" style="background-color: #999;"></canvas>
+                <div class="btnbox"> <button class="btn" onclick="download('can4','hiddenLink4')">4枚目をダウンロード</button> <a id="hiddenLink4" download="img_Aro_AceFile/AceFile4.png"></a>
+                  <!-- みえない りんく -->
+                </div>
+              </div>
+              <p class="koumoku">エラーが出たとき </p>
+              <p>絵文字など特殊な文字を使用していないかご確認ください </p>
+              <p> <br>2021/10/24 公開
+                <br>2021/10/30 一番上にタイトルが出るように
+                <br>2022/11/28 リニューアル
+              </p></div>
+              <script type="text/javascript">//全体のロードが終わったら発火
+              function drawcanvas() {
+                WebFont.load({
+                  google: {
+                    families: ['Noto+Sans+JP']
+                  },
+                  active: fontloaded //フォント読み込んだら発火
+                });
+              }
+
+              function fontloaded() {
+                //データ受け取りぞ～ん
+                //スライダー
+                function slider(x) {
+                  return 123 + 893 * x / 100;
+                };
+                //値があるか
+                function exist(value) {
+                  if (value === undefined) {
+                    return false;
+                  } else {
+                    return value;
+                  }
+                }
+                const form = document.forms["form1"];
+                //いちまいめ
+                //名前
+                const name = form.elements["name"].value;
+                //住んでいるところ
+                const place = form.elements["place"].value;
+                //年齢
+                const old = form.elements["old"].value;
+                //セクシャリティー
+                const sexuality = form.elements["sexuality"].value.replace(/r?n/g, '');
+                const sexuality_1 = sexuality.substr(0,23);
+                const sexuality_2 = sexuality.substr(23,23);
+                //仲良くなりたい人
+                const kon = form.elements["kon"];
+                const kon_memo = form.elements["kon_memo"].value.replace(/r?n/g, '');
+                const kon_memo_1 = kon_memo.substr(0,21);
+                const kon_memo_2 = kon_memo.substr(21,21);
+                const kon_memo_3 = kon_memo.substr(42,21);
+                //好きなもの
+                const favorite = form.elements["favorite"].value.replace(/r?n/g, '');
+                const favorite_1 = favorite.substr(0,21);
+                const favorite_2 = favorite.substr(21,21);
+                const favorite_3 = favorite.substr(42,21);
+                const favorite_4 = favorite.substr(63,21);
+                //一言
+                const hitokoto = form.elements["hitokoto"].value.replace(/r?n/g, '');
+                const hitokoto_1 = hitokoto.substr(0,22);
+                const hitokoto_2 = hitokoto.substr(22,22);
+                const hitokoto_3 = hitokoto.substr(44,22);
+                const hitokoto_4 = hitokoto.substr(66,22);
+                const hitokoto_5 = hitokoto.substr(88,22);
+                const hitokoto_6 = hitokoto.substr(110,22);
+
+                //にまいめ
+                //恋愛抱く
+                const hikare_1 = slider(form.elements["hikare_1"].value);
+                //メモ
+                const hikare_1_memo = form.elements["hikare_1_memo"].value;
+                //性別 ラジオ
+                const hikare_1_1 = exist(form.elements["hikare_1_1"].value);
+                //その他
+                const hikare_1_1_other = form.elements["hikare_1_1_other"].value;
+                //メモ
+                const hikare_1_1_memo = form.elements["hikare_1_1_memo"].value;
+                //条件 チェック
+                const hikare_1_2 = form.elements["hikare_1_2"];
+                //メモ
+                const hikare_1_2_memo = form.elements["hikare_1_2_memo"].value;
+
+                //性欲抱く
+                const hikare_2 = slider(form.elements["hikare_2"].value);
+                //メモ
+                const hikare_2_memo = form.elements["hikare_2_memo"].value;
+                //性別 ラジオ
+                const hikare_2_1 = exist(form.elements["hikare_2_1"].value);
+                //その他
+                const hikare_2_1_other = form.elements["hikare_2_1_other"].value;
+                //メモ
+                const hikare_2_1_memo = form.elements["hikare_2_1_memo"].value;
+                //性行為
+                const hikare_2_2 = slider(form.elements["hikare_2_2"].value);
+                //メモ
+                const hikare_2_2_memo = form.elements["hikare_2_2_memo"].value;
+                //条件 チェック
+                const hikare_2_3 = form.elements["hikare_2_3"];
+                //メモ
+                const hikare_2_3_memo = form.elements["hikare_2_3_memo"].value;
+
+                //さんまいめ
+                //望むパートナー
+                const pa_1 = form.elements["pa_1"];
+                //メモ
+                const pa_1_memo = form.elements["pa_1_memo"].value;
+                //同居
+                const pa_2 = slider(form.elements["pa_2"].value);
+                //メモ
+                const pa_2_memo = form.elements["pa_2_memo"].value;
+                //結婚
+                const pa_3 = slider(form.elements["pa_3"].value);
+                //メモ
+                const pa_3_memo = form.elements["pa_3_memo"].value;
+                //子供
+                const pa_4 = slider(form.elements["pa_4"].value);
+                //メモ
+                const pa_4_memo = form.elements["pa_4_memo"].value;
+                const pa_5 = form.elements["pa_5"].value.replace(/r?n/g, '');
+                const pa_5_1 = pa_5.substr(0,20);
+                const pa_5_2 = pa_5.substr(20,20);
+                const pa_5_3 = pa_5.substr(40,20);
+                const pa_5_4 = pa_5.substr(60,20);
+                const pa_5_5 = pa_5.substr(80,20);
+
+                //よんまいめ
+                //目的
+                const twi_1 = form.elements["twi_1"];
+                //その他
+                const twi_1_other = form.elements["twi_1_other"].value;
+                //メモ
+                const twi_1_memo = form.elements["twi_1_memo"].value;
+                //何してほしい
+                const twi_2 = form.elements["twi_2"];
+                //メモ
+                const twi_2_memo = form.elements["twi_2_memo"].value;
+                //他人の恋愛話
+                const twi_3 = slider(form.elements["twi_3"].value);
+                //メモ
+                const twi_3_memo = form.elements["twi_3_memo"].value;
+                //自分の恋愛話
+                const twi_4 = slider(form.elements["twi_4"].value);
+                //メモ
+                const twi_4_memo = form.elements["twi_4_memo"].value;
+                //他人の性話
+                const twi_5 = slider(form.elements["twi_5"].value);
+                //メモ
+                const twi_5_memo = form.elements["twi_5_memo"].value;
+                //自分の性話
+                const twi_6 = slider(form.elements["twi_6"].value);
+                //メモ
+                const twi_6_memo = form.elements["twi_6_memo"].value;
+                //知っといて
+                const twi_7 = form.elements["twi_7"].value;
+
+                //Canvasにひたすら書き込む
+                //文字色
+                const textcolor="rgba(105,37,160,0.7)";
+                //チェックマーク画像
+                const checkmark = new Image();
+                checkmark.src = "img_Aro_AceFile/checkmark.png";
+                //ベースの画像を読み込むよ 1
+                (function(){
+                  const image = new Image();
+                  image.src = 'img_Aro_AceFile/base1.jpg';
+                  image.onload = (function () {
+                    //画像ロードが完了してからキャンバスの準備をする
+                    const canvas = document.getElementById('can1');
+                    const context = canvas.getContext('2d');
+                    //キャンバスのサイズを画像サイズに合わせる
+                    canvas.width = image.width;
+                    canvas.height = image.height;
+                    //キャンバスに画像を描画（開始位置0,0）
+                    context.drawImage(image, 0, 0);
+                    //ここから書き込み
+                    context.fillStyle = textcolor;
+                    //名前
+                    context.font = "bold 60pt 'Noto Sans JP'";
+                    context.fillText(name, 100, 350);
+                    //住んでいるところ
+                    context.font = "bold 40pt 'Noto Sans JP'";
+                    context.fillText(place, 100, 480);
+                    //年代
+                    context.fillText(old, 530, 480);
+                    //セクシャリティー
+                    context.font = "bold 30pt 'Noto Sans JP'";
+                    context.fillText(sexuality_1, 100, 620);
+                    context.fillText(sexuality_2, 100, 680);
+                    //こんな人と仲良くなりたい
+                    //チェックマ～ク
+                    if (kon[0].checked === true) {
+                      context.drawImage(checkmark, 120, 765, 50, 50);
+                    }if(kon[1].checked === true){
+                      context.drawImage(checkmark, 120, 811, 50, 50);
+                    }if(kon[2].checked === true){
+                      context.drawImage(checkmark, 120, 857, 50, 50);
+                    }if(kon[3].checked === true){
+                      context.drawImage(checkmark, 120, 903, 50, 50);
+                    }if(kon[4].checked === true){
+                      context.drawImage(checkmark, 120, 950, 50, 50);
+                    }
+
+                    context.font = "bold 30pt 'Noto Sans JP'";
+                    context.fillText(kon_memo_1, 140, 1135);
+                    context.fillText(kon_memo_2, 140, 1175);
+                    context.fillText(kon_memo_3, 140, 1215);
+                    //好きなもの
+                    context.font = "bold 30pt 'Noto Sans JP'";
+                    context.fillText(favorite_1, 140, 1370);
+                    context.fillText(favorite_2, 140, 1410);
+                    context.fillText(favorite_3, 140, 1450);
+                    context.fillText(favorite_4, 140, 1490);
+                    //ひとこと
+                    context.font = "bold 30pt 'Noto Sans JP'";
+                    context.fillText(hitokoto_1, 120, 1640);
+                    context.fillText(hitokoto_2, 120, 1680);
+                    context.fillText(hitokoto_3, 120, 1720);
+                    context.fillText(hitokoto_4, 120, 1760);
+                    context.fillText(hitokoto_5, 120, 1800);
+                    context.fillText(hitokoto_6, 120, 1840);
+                  });//onload
+                })();
+                //ベースの画像を読み込むよ 2
+                (function(){
+                  const image = new Image();
+                  image.src = 'img_Aro_AceFile/base2.jpg';
+                  image.onload = (function () {
+                    //画像ロードが完了してからキャンバスの準備をする
+                    const canvas = document.getElementById('can2');
+                    const context = canvas.getContext('2d');
+                    //キャンバスのサイズを画像サイズに合わせる
+                    canvas.width = image.width;
+                    canvas.height = image.height;
+                    //キャンバスに画像を描画（開始位置0,0）
+                    context.drawImage(image, 0, 0);
+                    //ここから書き込み
+                    context.fillStyle = textcolor;
+                    context.textAlign = "center";
+                    context.textBaseline = "middle";
+                    context.font = "bold 40pt 'Noto Sans JP'";
+                    //恋愛感情
+                    context.fillText("●", hikare_1, 331);
+                    //チェックマ～ク せいべつ
+                    if (hikare_1_1==="1") {
+                      context.drawImage(checkmark, 107, 495, 50, 50);
+                    }else if(hikare_1_1==="2"){
+                      context.drawImage(checkmark, 337, 495, 50, 50);
+                    }else if(hikare_1_1==="3"){
+                      context.drawImage(checkmark, 567, 495, 50, 50);
+                    }else if(hikare_1_1==="4"){
+                      context.drawImage(checkmark, 860, 495, 50, 50);
+                    }else if(hikare_1_1==="5"){
+                      context.drawImage(checkmark, 107, 545, 50, 50);
+                    }else if(hikare_1_1==="その他"){
+                      context.drawImage(checkmark, 458, 545, 50, 50);
+                      context.font = "bold 25pt 'Noto Sans JP'";
+                      context.fillText(hikare_1_1_other, 830, 577);
+                    }
+                    //チェックマ～ク あいて
+                    if (hikare_1_2[0].checked === true) {
+                      context.drawImage(checkmark, 109, 735, 50, 50);
+                    }if(hikare_1_2[1].checked === true){
+                      context.drawImage(checkmark, 109, 786, 50, 50);
+                    }if(hikare_1_2[2].checked === true){
+                      context.drawImage(checkmark, 109, 837, 50, 50);
+                    }
+
+                    //性欲
+                    context.font = "bold 40pt 'Noto Sans JP'";
+                    context.fillText("●", hikare_2, 1122);
+                    //チェックマ～ク せいべつ
+                    if (hikare_2_1==="1") {
+                      context.drawImage(checkmark, 109, 1296, 50, 50);
+                    }else if(hikare_2_1==="2"){
+                      context.drawImage(checkmark, 339, 1296, 50, 50);
+                    }else if(hikare_2_1==="3"){
+                      context.drawImage(checkmark, 569, 1296, 50, 50);
+                    }else if(hikare_2_1==="4"){
+                      context.drawImage(checkmark, 862, 1296, 50, 50);
+                    }else if(hikare_2_1==="5"){
+                      context.drawImage(checkmark, 109, 1346, 50, 50);
+                    }else if(hikare_2_1==="その他"){
+                      context.drawImage(checkmark, 460, 1346, 50, 50);
+                      context.font = "bold 25pt 'Noto Sans JP'";
+                      context.fillText(hikare_2_1_other, 830, 1380);
+                    }
+                    //性行為
+                    context.font = "bold 40pt 'Noto Sans JP'";
+                    context.fillText("●", hikare_2_2, 1616);
+                    //チェックマ～ク あいて
+                    if (hikare_2_3[0].checked === true) {
+                      context.drawImage(checkmark, 109, 1776, 50, 50);
+                    }if(hikare_2_3[1].checked === true){
+                      context.drawImage(checkmark, 109, 1827, 50, 50);
+                    }if(hikare_2_3[2].checked === true){
+                      context.drawImage(checkmark, 109, 1878, 50, 50);
+                    }
+                    //メモ
+                    context.textAlign = "left";
+                    context.font = "bold 30pt 'Noto Sans JP'";
+                    context.fillText(hikare_1_memo, 135, 420);
+                    context.fillText(hikare_1_1_memo, 135, 665);
+                    context.fillText(hikare_1_2_memo, 135, 960);
+                    context.fillText(hikare_2_memo, 135, 1220);
+                    context.fillText(hikare_2_1_memo, 135, 1477);
+                    context.fillText(hikare_2_2_memo, 135, 1704);
+                    context.fillText(hikare_2_3_memo, 135, 1994);
+                  });//onload
+                })();
+
+                //ベースの画像を読み込むよ 3
+                (function(){
+                  const image = new Image();
+                  image.src = 'img_Aro_AceFile/base3.jpg';
+                  image.onload = (function () {
+                    //画像ロードが完了してからキャンバスの準備をする
+                    const canvas = document.getElementById('can3');
+                    const context = canvas.getContext('2d');
+                    //キャンバスのサイズを画像サイズに合わせる
+                    canvas.width = image.width;
+                    canvas.height = image.height;
+                    //キャンバスに画像を描画（開始位置0,0）
+                    context.drawImage(image, 0, 0);
+                    //ここから書き込み
+                    context.fillStyle = textcolor;
+                    context.textAlign = "center";
+                    context.textBaseline = "middle";
+                    context.font = "bold 40pt 'Noto Sans JP'";
+                    //チェックマ～ク
+                    if (pa_1[0].checked === true) {
+                      context.drawImage(checkmark, 107, 270, 50, 50);
+                    }if(pa_1[1].checked === true){
+                      context.drawImage(checkmark, 107, 321, 50, 50);
+                    }if(pa_1[2].checked === true){
+                      context.drawImage(checkmark, 107, 372, 50, 50);
+                    }if(pa_1[3].checked === true){
+                      context.drawImage(checkmark, 107, 423, 50, 50);
+                    }if(pa_1[4].checked === true){
+                      context.drawImage(checkmark, 107, 474, 50, 50);
+                    }
+                    context.fillText("●", pa_2, 776);
+                    context.fillText("●", pa_3, 1070);
+                    context.fillText("●", pa_4, 1368);
+                    //メモ
+                    context.textAlign = "left";
+                    context.font = "bold 30pt 'Noto Sans JP'";
+                    context.fillText(pa_1_memo, 135, 597);
+                    context.fillText(pa_2_memo, 135, 870);
+                    context.fillText(pa_3_memo, 135, 1178);
+                    context.fillText(pa_4_memo, 135, 1470);
+                    context.fillText(pa_5_1, 145, 1685);
+                    context.fillText(pa_5_2, 145, 1725);
+                    context.fillText(pa_5_3, 145, 1765);
+                    context.fillText(pa_5_4, 145, 1805);
+                    context.fillText(pa_5_5, 145, 1845);
+                  });//onload
+                })();
+
+                //ベースの画像を読み込むよ 4
+                (function(){
+                  const image = new Image();
+                  image.src = 'img_Aro_AceFile/base4.jpg';
+                  image.onload = (function () {
+                    //画像ロードが完了してからキャンバスの準備をする
+                    const canvas = document.getElementById('can4');
+                    const context = canvas.getContext('2d');
+                    //キャンバスのサイズを画像サイズに合わせる
+                    canvas.width = image.width;
+                    canvas.height = image.height;
+                    //キャンバスに画像を描画（開始位置0,0）
+                    context.drawImage(image, 0, 0);
+                    //ここから書き込み
+                    context.fillStyle = textcolor;
+                    context.textAlign = "center";
+                    context.textBaseline = "middle";
+                    context.font = "bold 30pt 'Noto Sans JP'";
+                    //チェックマ～ク
+                    if (twi_1[0].checked === true) {
+                      context.drawImage(checkmark, 109, 265, 50, 50);
+                    }if(twi_1[1].checked === true){
+                      context.drawImage(checkmark, 345, 265, 50, 50);
+                    }if(twi_1[2].checked === true){
+                      context.drawImage(checkmark, 665, 265, 50, 50);
+                    }if(twi_1[3].checked === true){
+                      context.drawImage(checkmark, 109, 315, 50, 50);
+                      context.fillText(twi_1_other, 650, 344);
+                    }
+                    //チェックマ～ク
+                    if (twi_2[0].checked === true) {
+                      context.drawImage(checkmark, 109, 516, 50, 50);
+                    }if(twi_2[1].checked === true){
+                      context.drawImage(checkmark, 378, 516, 50, 50);
+                    }if(twi_2[2].checked === true){
+                      context.drawImage(checkmark, 597, 516, 50, 50);
+                    }if(twi_2[3].checked === true){
+                      context.drawImage(checkmark, 804, 516, 50, 50);
+                    }
+                    context.font = "bold 40pt 'Noto Sans JP'";
+                    context.fillText("●", twi_3, 792);
+                    context.fillText("●", twi_4, 1090);
+                    context.fillText("●", twi_5, 1400);
+                    context.fillText("●", twi_6, 1653);
+                    //メモ
+                    context.textAlign = "left";
+                    context.font = "bold 30pt 'Noto Sans JP'";
+                    context.fillText(twi_1_memo, 135, 430);
+                    context.fillText(twi_2_memo, 135, 635);
+                    context.fillText(twi_3_memo, 135, 893);
+                    context.fillText(twi_4_memo, 135, 1200);
+                    context.fillText(twi_5_memo, 135, 1488);
+                    context.fillText(twi_6_memo, 135, 1754);
+                    context.fillText(twi_7, 135, 1934);
+                  }); //onload
+                })();
+              }
+              //ダウンロード するよ！
+              function download(can, hiddenLink) {
+                let canvas = document.getElementById(can);
+                let link = document.getElementById(hiddenLink);
+                link.href = canvas.toDataURL();
+                link.click();
+              }
+              //キャンバスの表示
+              function display() {
+                const a = document.getElementById("display");
+                a.style.display = "block";
+              }
+              </script>
+            </body>
+            </html>
