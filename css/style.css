@@ -61,6 +61,9 @@ h1{
 	line-height: 1em;
 	margin-top: 1.5em;
 }
+p{
+	margin: 0.3em;
+}
 .header{
 	color: #DADDD8;
 	font-size: 1.7em;
@@ -70,8 +73,8 @@ h1{
 .koumoku{
 	font-size: 1.1em;
 	margin-top: 1.5em;
+	margin-bottom: 0.5em;
 	line-height: 1em;
-	margin-bottom: 0.2em;
 	font-weight: bold;
 }
 .case{
@@ -183,24 +186,51 @@ textarea:focus {
 .textarea_hitokoto{
 	height: 10em;
 }
+/*ALT用テキスト表示エリア*/
+.ALT{
+font-size: 1em;
+	height: 27em;
+	margin-bottom: 0em;
+}
 /*ボタンがいっぱい*/
 .btnbox{
 	width: 100%;
 	text-align: center;
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 }
 button.btn{
 	background-color:#A11692;
-	padding: 1em 5em;
-	margin: 1em;
 	color: #fff;
-	text-decoration: none;
-	border-radius: 5px;
 	font-weight: bold;
+	font-size: 1.2em;
+  transition: 0.2s ease-in-out;
+	padding: 0.7em 2em;
+	margin: 1em;
+	text-decoration: none;
+  border: 1.5px solid #A11692;
+	border-radius: 5px;
+  box-shadow: 1px 2px #aaaaaa;
 }
 button.btn:hover{
-	cursor: pointer;
-
+		background-color:#841278;
+			cursor: pointer;
+}
+button.ALTbtn{
+	background-color:#fff;
+	color: #A11692;
+	font-weight: bold;
+	font-size: 1em;
+  transition: 0.2s ease-in-out;
+	padding: 0.5em 1em;
+	margin: 0.5em;
+	text-decoration: none;
+  border: 1.5px solid #A11692;
+	border-radius: 5px;
+  box-shadow: 1px 2px #aaaaaa;
+}
+button.ALTbtn:hover{
+		background-color:#fcedfb;
+		cursor: pointer;
 }
 /*こっからDLページ*/
 .hiddenLink{
