@@ -23,7 +23,7 @@ body{
 		font-weight: 500;
 }
 header{
-	padding: 1em 2em;
+	padding: 0.5em 2em;
 	margin: 0;
 	background-color: #40263d;
 }
@@ -63,6 +63,7 @@ h1{
 }
 p{
 	margin: 0.3em;
+	line-height: normal;
 }
 .header{
 	color: #DADDD8;

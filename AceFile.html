@@ -7,648 +7,536 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
   <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" href="img_AceFile/favicon.ico"> </head>
-  <body onload="drawcanvas();" style="background-image: url(img_AceFile/background.png);">
-    <header>
-      <p class="header">#AceFile2 </p>
-    </header>
-    <div class="container"> <img class="rogo" src="img_AceFile/rogo.png" alt="ロゴ画像">
-      <p class="koumoku">更新やブラウザバックを行うと入力中のデータが消えます <br/>項目ごとに入力できる文字数の制限があります <br/> <br/> <a href="https://ace-file.com/Aro_AceFile">#Aro_AceFile（2021年作）はこちら</a> </p>
-      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-      <form name="form1" action="index.html">
-        <h1>【性的の話】</h1>
-        <p class="koumoku">特定の他者に対して性的な魅力を感じますか？ </p>
+  <link rel="shortcut icon" href="img_AceFile/favicon.ico">
+</head>
+<body onload="drawcanvas();" style="background-image: url(img_AceFile/background.png);">
+  <header>
+    <p class="header">#AceFile2 </p>
+  </header>
+  <div class="container"> <img class="rogo" src="img_AceFile/rogo.png" alt="ロゴ画像">
+    <p class="koumoku">利用方法</p>
+    <p>
+      ・更新やブラウザバックを行うと入力中のデータが消えます。 <br/>
+      ・項目ごとに入力できる文字数の制限があります。 <br/>
+      ・画像作成後ALT用テキストが自動で作成されます。<br/>
+      <br/>
+      ・<a href="https://ace-file.com/Aro_AceFile">#Aro_AceFile（2021年作）はこちら</a>
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <form name="form1" onsubmit="return false;" action="index.html">
+      <h1>【性的の話】</h1>
+      <p class="koumoku">特定の他者に対して性的な魅力を感じますか？ </p>
+      <div class="flex">
+        <div class="inflex_label">
+          <p class="rangelabel">感じる </p>
+        </div>
+        <div class="inflex_range"> <input type="range" list="list1" name="seku_1"> <datalist id="list1">
+          <option value="50">
+          </datalist>
+        </div>
+        <div class="inflex_label">
+          <p class="rangelabel">感じない </p>
+        </div>
+      </div>
+      <div class="box">
+        <p class="case">感じる場合 </p>
+        <p class="koumoku">どの性別ですか？ </p>
+        <label>
+          <input type="radio" name="seku_1_1" class="radio" value="女性のみ">女性のみ</option>
+        </label> <br> <label>
+          <input type="radio" name="seku_1_1" class="radio" value="男性のみ">男性のみ</option>
+        </label> <br> <label>
+          <input type="radio" name="seku_1_1" class="radio" value="男性女性どちらでも">男性女性どちらでも</option>
+        </label> <br> <label>
+          <input type="radio" name="seku_1_1" class="radio" value="すべての性別">すべての性別</option>
+        </label> <br> <label>
+          <input type="radio" name="seku_1_1" class="radio" value="性別は関係ない">性別は関係ない</option>
+        </label> <br> <label>
+          <input type="radio" name="seku_1_1" class="radio" value="その他">その他</option>
+        </label>
+        <p class="memo">その他記入欄(11文字)</p> <input type="text" title="その他" name="seku_other" maxlength="11">
+        <p class="koumoku">その相手と性的な行為をしたいと思いますか？ </p>
         <div class="flex">
           <div class="inflex_label">
-            <p class="rangelabel">感じる </p>
+            <p class="rangelabel">思う </p>
           </div>
-          <div class="inflex_range"> <input type="range" list="list1" name="seku_1"> <datalist id="list1">
-            <option value="50">
-            </datalist> </div>
+          <div class="inflex_range"> <input type="range" list="list1" name="seku_1_2"> </div>
+          <div class="inflex_label">
+            <p class="rangelabel">思わない </p>
+          </div>
+        </div>
+        <p class="koumoku">それは信頼できる相手のみですか？ </p>
+        <div class="flex">
+          <div class="inflex_label">
+            <p class="rangelabel">信頼できる相手のみ </p>
+          </div>
+          <div class="inflex_range"> <input type="range" list="list1" name="seku_1_3"> </div>
+          <div class="inflex_label">
+            <p class="rangelabel">関係ない </p>
+          </div>
+        </div>
+      </div>
+      <p class="koumoku">自分の中に性欲があると思いますか？ </p>
+      <div class="flex">
+        <div class="inflex_label">
+          <p class="rangelabel">思う </p>
+        </div>
+        <div class="inflex_range"> <input type="range" list="list1" name="seku_2"> </div>
+        <div class="inflex_label">
+          <p class="rangelabel">思わない </p>
+        </div>
+      </div>
+      <p class="koumoku">性欲を向けられることを望みますか？ </p>
+      <div class="flex">
+        <div class="inflex_label">
+          <p class="rangelabel">望む </p>
+        </div>
+        <div class="inflex_range"> <input type="range" list="list2" name="seku_3">
+          <datalist id="list2"><option value="33"><option value="66">
+          </datalist>
+        </div>
+        <div class="inflex_label">
+          <p class="rangelabel">嫌悪を感じる </p>
+        </div>
+      </div>
+      <p class="koumoku">他人の性的な話や下ネタは苦手ですか？ </p>
+      <div class="flex">
+        <div class="inflex_label">
+          <p class="rangelabel">平気 </p>
+        </div>
+        <div class="inflex_range"> <input type="range" list="list2" name="seku_4"> </div>
+        <div class="inflex_label">
+          <p class="rangelabel">嫌悪を感じる </p>
+        </div>
+      </div>
+      <p class="koumoku">性的な感情が含まれてない接触は苦手ですか？ </p>
+      <div class="flex">
+        <div class="inflex_label">
+          <p class="rangelabel">平気 </p>
+        </div>
+        <div class="inflex_range"> <input type="range" list="list2" name="seku_5"> </div>
+        <div class="inflex_label">
+          <p class="rangelabel">嫌悪を感じる </p>
+        </div>
+      </div>
+    </form>
+    <form name="form2" onsubmit="return false;" action="index.html">
+      <h1>【恋愛の話】</h1>
+      <p class="koumoku">特定の他者に対して恋愛感情を抱きますか？ </p>
+      <div class="flex">
+        <div class="inflex_label">
+          <p class="rangelabel">感じる </p>
+        </div>
+        <div class="inflex_range"> <input type="range" list="list1" name="roma_1"> </div>
+        <div class="inflex_label">
+          <p class="rangelabel">感じない </p>
+        </div>
+      </div>
+      <div class="box">
+        <p class="case">抱く場合 </p>
+        <p class="koumoku">どの性別ですか？ </p>
+        <label>
+          <input type="radio" name="roma_1_1" class="radio" value="女性のみ">女性のみ</option>
+        </label> <br><label>
+          <input type="radio" name="roma_1_1" class="radio" value="男性のみ">男性のみ
+        </label> <br> <label>
+          <input type="radio" name="roma_1_1" class="radio" value="男性女性どちらでも">男性女性どちらでも</option>
+        </label> <br> <label>
+          <input type="radio" name="roma_1_1" class="radio" value="すべての性別">すべての性別</option>
+        </label> <br> <label>
+          <input type="radio" name="roma_1_1" class="radio" value="性別は関係ない">性別は関係ない</option>
+        </label> <br> <label>
+          <input type="radio" name="roma_1_1" class="radio" value="その他">その他</option>
+        </label>
+        <p class="memo">その他記入欄(9文字)</p> <input type="text" title="その他" name="roma_other" maxlength="9">
+        <p class="koumoku">それは信頼できる相手のみですか？ </p>
+        <div class="flex">
+          <div class="inflex_label">
+            <p class="rangelabel">信頼できる相手のみ </p>
+          </div>
+          <div class="inflex_range"> <input type="range" list="list1" name="roma_1_2"> </div>
+          <div class="inflex_label">
+            <p class="rangelabel">関係ない </p>
+          </div>
+        </div>
+      </div>
+      <p class="koumoku">恋愛感情を向けられることを望みますか？ </p>
+      <div class="flex">
+        <div class="inflex_label">
+          <p class="rangelabel">望む </p>
+        </div>
+        <div class="inflex_range"> <input type="range" list="list2" name="roma_2"> </div>
+        <div class="inflex_label">
+          <p class="rangelabel">嫌悪を感じる </p>
+        </div>
+      </div>
+      <p class="koumoku">好みの顔のタイプはありますか </p>
+      <div class="flex">
+        <div class="inflex_label">
+          <p class="rangelabel">はい </p>
+        </div>
+        <div class="inflex_range"> <input type="range" list="list1" name="roma_3"> </div>
+        <div class="inflex_label">
+          <p class="rangelabel">いいえ </p>
+        </div>
+      </div>
+      <p class="koumoku">推しはいますか？ </p>
+      <div class="flex">
+        <div class="inflex_label">
+          <p class="rangelabel">はい </p>
+        </div>
+        <div class="inflex_range"> <input type="range" list="list1" name="roma_4"> </div>
+        <div class="inflex_label">
+          <p class="rangelabel">いいえ </p>
+        </div>
+      </div>
+      <p class="koumoku">恋愛感情を抱くことに憧れはありますか？ </p>
+      <div class="flex">
+        <div class="inflex_label">
+          <p class="rangelabel">はい </p>
+        </div>
+        <div class="inflex_range"> <input type="range" list="list1" name="roma_5"> </div>
+        <div class="inflex_label">
+          <p class="rangelabel">いいえ </p>
+        </div>
+      </div>
+      <p class="koumoku">他人の恋愛話や惚気話を聞くのは平気ですか？ </p>
+      <div class="flex">
+        <div class="inflex_label">
+          <p class="rangelabel">平気 </p>
+        </div>
+        <div class="inflex_range"> <input type="range" list="list2" name="roma_6"> </div>
+        <div class="inflex_label">
+          <p class="rangelabel">嫌悪を感じる </p>
+        </div>
+      </div>
+    </form>
+    <form name="form3" onsubmit="return false;" action="index.html">
+      <h1>【パートナーの話】</h1>
+      <div class="box">
+        <p class="case">以下のパートナー関係を望みますか？ </p>
+        <p class="koumoku">恋愛も性的関係もあるパートナー </p>
+        <div>
+          <div class="flex">
             <div class="inflex_label">
-              <p class="rangelabel">感じない </p>
+              <p class="rangelabel">望む </p>
+            </div>
+            <div class="inflex_range"> <input type="range" list="list1" name="pa_1_1"> </div>
+            <div class="inflex_label">
+              <p class="rangelabel">望まない </p>
             </div>
           </div>
-          <div class="box">
-            <p class="case">感じる場合 </h2>
-              <p class="koumoku">どの性別ですか？ </p> <label>
-                <input type="radio" name="seku_1_1" class="radio" value="1">女性のみ
-              </option>
-            </label> <br> <label>
-              <input type="radio" name="seku_1_1" class="radio" value="2">男性のみ
-            </option>
-          </label> <br> <label>
-            <input type="radio" name="seku_1_1" class="radio" value="3">男性女性どちらでも
-          </option>
-        </label> <br> <label>
-          <input type="radio" name="seku_1_1" class="radio" value="4">すべての性別
-        </option>
+        </div>
+        <p class="koumoku">恋愛も性的関係もないパートナー </p>
+        <div class="flex">
+          <div class="inflex_label">
+            <p class="rangelabel">望む </p>
+          </div>
+          <div class="inflex_range"> <input type="range" list="list1" name="pa_1_2"> </div>
+          <div class="inflex_label">
+            <p class="rangelabel">望まない </p>
+          </div>
+        </div>
+        <p class="koumoku">恋愛関係のみのパートナー </p>
+        <div class="flex">
+          <div class="inflex_label">
+            <p class="rangelabel">望む </p>
+          </div>
+          <div class="inflex_range"> <input type="range" list="list1" name="pa_1_3"> </div>
+          <div class="inflex_label">
+            <p class="rangelabel">望まない </p>
+          </div>
+        </div>
+        <p class="koumoku">性的関係のみのパートナー </p>
+        <div class="flex">
+          <div class="inflex_label">
+            <p class="rangelabel">望む </p>
+          </div>
+          <div class="inflex_range"> <input type="range" list="list1" name="pa_1_4"> </div>
+          <div class="inflex_label">
+            <p class="rangelabel">望まない </p>
+          </div>
+        </div>
+      </div>
+      <p class="koumoku">パートナーとの同居を望みますか？ </p>
+      <div class="flex">
+        <div class="inflex_label">
+          <p class="rangelabel">望む </p>
+        </div>
+        <div class="inflex_range"> <input type="range" list="list1" name="pa_2"> </div>
+        <div class="inflex_label">
+          <p class="rangelabel">望まない </p>
+        </div>
+      </div>
+      <p class="koumoku">結婚を望みますか？ </p>
+      <div class="flex">
+        <div class="inflex_label">
+          <p class="rangelabel">望む </p>
+        </div>
+        <div class="inflex_range"> <input type="range" list="list1" name="pa_3"> </div>
+        <div class="inflex_label">
+          <p class="rangelabel">望まない </p>
+        </div>
+      </div>
+      <p class="koumoku">子供(実子に限らず)を望みますか？ </p>
+      <div class="flex">
+        <div class="inflex_label">
+          <p class="rangelabel">はい </p>
+        </div>
+        <div class="inflex_range"> <input type="range" list="list1" name="pa_4"> </div>
+        <div class="inflex_label">
+          <p class="rangelabel">いいえ </p>
+        </div>
+      </div>
+      <p class="koumoku">パートナーの譲れない条件はありますか？(140文字) </p> <textarea type="text" class="textarea_pa" name="pa_5" placeholder="改行は自動的に削除されます" maxlength="140" wrap="soft"></textarea>
+    </form>
+    <form name="form4" onsubmit="return false;" action="index.html">
+      <h1>【プロフィール】</h1>
+      <p class="koumoku">呼ばれたい名前(11文字) </p> <input type="text" title="呼ばれたい名前" name="name" maxlength="11">
+      <p class="koumoku">住んでいるところ(6文字) </p> <input type="text" title="住んでいるところ" name="place" maxlength="6">
+      <p class="koumoku">年代(9文字) </p> <input type="text" title="年代" name="old" maxlength="9">
+      <p class="koumoku">現在自認しているセクシャリティ(16文字) </p> <input type="text" title="現在自認しているセクシャリティ" name="sexuality" maxlength="16">
+      <p class="koumoku">＜こんな人と仲良くなりたい＞ </p>
+      <label>
+        <input type="checkbox" name="kon" class="checkbox" value="セクシャリティーが似ている">セクシャリティーが似ている</option>
       </label> <br> <label>
-        <input type="radio" name="seku_1_1" class="radio" value="5">性別は関係ない
-      </option>
-    </label> <br> <label>
-      <input type="radio" name="seku_1_1" class="radio" value="その他">その他(11文字)
-    </option>
-  </label> <input type="text" title="その他" name="seku_other" maxlength="11">
-  <p class="koumoku">その相手と性的な行為をしたいと思いますか？ </p>
-  <div class="flex">
-    <div class="inflex_label">
-      <p class="rangelabel">思う </p>
-    </div>
-    <div class="inflex_range"> <input type="range" list="list1" name="seku_1_2"> </div>
-    <div class="inflex_label">
-      <p class="rangelabel">思わない </p>
-    </div>
-  </div>
-  <p class="koumoku">それは信頼できる相手のみですか？ </p>
-  <div class="flex">
-    <div class="inflex_label">
-      <p class="rangelabel">信頼できる相手のみ </p>
-    </div>
-    <div class="inflex_range"> <input type="range" list="list1" name="seku_1_3"> </div>
-    <div class="inflex_label">
-      <p class="rangelabel">関係ない </p>
-    </div>
-  </div>
-</div>
-<p class="koumoku">自分の中に性欲があると思いますか？ </p>
-<div class="flex">
-  <div class="inflex_label">
-    <p class="rangelabel">思う </p>
-  </div>
-  <div class="inflex_range"> <input type="range" list="list1" name="seku_2"> </div>
-  <div class="inflex_label">
-    <p class="rangelabel">思わない </p>
-  </div>
-</div>
-<p class="koumoku">性欲を向けられることを望みますか？ </p>
-<div class="flex">
-  <div class="inflex_label">
-    <p class="rangelabel">望む </p>
-  </div>
-  <div class="inflex_range"> <input type="range" list="list2" name="seku_3"> <datalist id="list2">
-    <option value="33">
-      <option value="66">
-      </datalist> </div>
-      <div class="inflex_label">
-        <p class="rangelabel">嫌悪を感じる </p>
-      </div>
-    </div>
-    <p class="koumoku">他人の性的な話や下ネタは苦手ですか？ </p>
-    <div class="flex">
-      <div class="inflex_label">
-        <p class="rangelabel">平気 </p>
-      </div>
-      <div class="inflex_range"> <input type="range" list="list2" name="seku_4"> </div>
-      <div class="inflex_label">
-        <p class="rangelabel">嫌悪を感じる </p>
-      </div>
-    </div>
-    <p class="koumoku">性的な感情が含まれてない接触は苦手ですか？ </p>
-    <div class="flex">
-      <div class="inflex_label">
-        <p class="rangelabel">平気 </p>
-      </div>
-      <div class="inflex_range"> <input type="range" list="list2" name="seku_5"> </div>
-      <div class="inflex_label">
-        <p class="rangelabel">嫌悪を感じる </p>
-      </div>
-    </div>
-    <h1>【恋愛の話】</h1>
-    <p class="koumoku">特定の他者に対して恋愛感情を抱きますか？ </p>
-    <div class="flex">
-      <div class="inflex_label">
-        <p class="rangelabel">感じる </p>
-      </div>
-      <div class="inflex_range"> <input type="range" list="list1" name="roma_1"> </div>
-      <div class="inflex_label">
-        <p class="rangelabel">感じない </p>
-      </div>
-    </div>
-    <div class="box">
-      <p class="case">抱く場合 </h2>
-        <p class="koumoku">どの性別ですか？ </p> <label>
-          <input type="radio" name="roma_1_1" class="radio" value="1">女性のみ
-        </option>
+        <input type="checkbox" name="kon" class="checkbox" value="パートナー観が似ている">パートナー観が似ている</option>
       </label> <br> <label>
-        <input type="radio" name="roma_1_1" class="radio" value="2">男性のみ
-      </option>
-    </label> <br> <label>
-      <input type="radio" name="roma_1_1" class="radio" value="3">男性女性どちらでも
-    </option>
-  </label> <br> <label>
-    <input type="radio" name="roma_1_1" class="radio" value="4">すべての性別
-  </option>
-</label> <br> <label>
-  <input type="radio" name="roma_1_1" class="radio" value="5">性別は関係ない
-</option>
-</label> <br> <label>
-  <input type="radio" name="roma_1_1" class="radio" value="その他">その他(9文字)
-</option>
-</label> <input type="text" title="その他" name="roma_other" maxlength="9">
-<p class="koumoku">それは信頼できる相手のみですか？ </p>
-<div class="flex">
-  <div class="inflex_label">
-    <p class="rangelabel">信頼できる相手のみ </p>
-  </div>
-  <div class="inflex_range"> <input type="range" list="list1" name="roma_1_2"> </div>
-  <div class="inflex_label">
-    <p class="rangelabel">関係ない </p>
-  </div>
-</div>
-</div>
-<p class="koumoku">恋愛感情を向けられることを望みますか？ </p>
-<div class="flex">
-  <div class="inflex_label">
-    <p class="rangelabel">望む </p>
-  </div>
-  <div class="inflex_range"> <input type="range" list="list2" name="roma_2"> </div>
-  <div class="inflex_label">
-    <p class="rangelabel">嫌悪を感じる </p>
-  </div>
-</div>
-<p class="koumoku">好みの顔のタイプはありますか </p>
-<div class="flex">
-  <div class="inflex_label">
-    <p class="rangelabel">はい </p>
-  </div>
-  <div class="inflex_range"> <input type="range" list="list1" name="roma_3"> </div>
-  <div class="inflex_label">
-    <p class="rangelabel">いいえ </p>
-  </div>
-</div>
-<p class="koumoku">推しはいますか？ </p>
-<div class="flex">
-  <div class="inflex_label">
-    <p class="rangelabel">はい </p>
-  </div>
-  <div class="inflex_range"> <input type="range" list="list1" name="roma_4"> </div>
-  <div class="inflex_label">
-    <p class="rangelabel">いいえ </p>
-  </div>
-</div>
-<p class="koumoku">恋愛感情を抱くことに憧れはありますか？ </p>
-<div class="flex">
-  <div class="inflex_label">
-    <p class="rangelabel">はい </p>
-  </div>
-  <div class="inflex_range"> <input type="range" list="list1" name="roma_5"> </div>
-  <div class="inflex_label">
-    <p class="rangelabel">いいえ </p>
-  </div>
-</div>
-<p class="koumoku">他人の恋愛話や惚気話を聞くのは平気ですか？ </p>
-<div class="flex">
-  <div class="inflex_label">
-    <p class="rangelabel">平気 </p>
-  </div>
-  <div class="inflex_range"> <input type="range" list="list2" name="roma_6"> </div>
-  <div class="inflex_label">
-    <p class="rangelabel">嫌悪を感じる </p>
-  </div>
-</div>
-<h1>【パートナーの話】</h1>
-<div class="box">
-  <p class="case">以下のパートナー関係を望みますか？ </p>
-  <p class="koumoku">恋愛も性的関係もあるパートナー </p>
-  <div>
-    <div class="flex">
-      <div class="inflex_label">
-        <p class="rangelabel">望む </p>
+        <input type="checkbox" name="kon" class="checkbox" value="気にしない">気にしない</option>
+      </label> <br>
+      <p class="memo">その他記入欄(63文字) </p> <textarea type="text" class="textarea_other" name="kon_other" placeholder="改行は自動的に削除されます" maxlength="63"></textarea>
+      <p class="koumoku">＜好きなもの＞(84文字) </p> <textarea type="text" class="textarea_fav" name="favorite" placeholder="改行は自動的に削除されます" maxlength="84"></textarea>
+      <p class="koumoku">＜仲良くしてくれる人は＞ </p>
+      <label>
+        <input type="checkbox" name="naka" class="checkbox" value="DM">DM</option>
+      </label> <br> <label>
+        <input type="checkbox" name="naka" class="checkbox" value="リプ">リプ</option>
+      </label> <br> <label>
+        <input type="checkbox" name="naka" class="checkbox" value="RT">RT</option>
+      </label> <br> <label>
+        <input type="checkbox" name="naka" class="checkbox" value="いいね">いいね</option>
+      </label> <br>
+      <p class="koumoku">一言どうぞ(132文字) </p> <textarea type="text" class="textarea_hitokoto" name="hitokoto" placeholder="改行は自動的に削除されます" maxlength="132"></textarea>
+      <div class="btnbox"> <button class="btn" type="button" onclick="fontloaded();display('finishDisplay');">完成！</button> </div>
+    </form>
+    <div id="finishDisplay" style="display:none">
+      <p class="koumoku">内容を変更したいときは変更後「完成！」ボタンを再び押して下さい <br>ダウンロードボタンが機能しない場合画像を右クリックまたは長押しから画像を保存してください </p>
+      <!-- いちまいめ --><canvas id="can1" width="820" height="1440" style="background-color: #999;">お使いのブラウザには対応しておりません</canvas>
+      <div class="btnbox"> <button class="btn" onclick="download('can1','hiddenLink1')">1枚目をダウンロード</button> <a id="hiddenLink1" download="img_AceFile/AceFile1.png"></a>
+        <!-- みえない りんく -->
       </div>
-      <div class="inflex_range"> <input type="range" list="list1" name="pa_1_1"> </div>
-      <div class="inflex_label">
-        <p class="rangelabel">望まない </p>
+      <!-- にまいめ --><canvas id="can2" width="820" height="1440" style="background-color: #999;"></canvas>
+      <div class="btnbox"> <button class="btn" onclick="download('can2','hiddenLink2')">2枚目をダウンロード</button> <a id="hiddenLink2" download="img_AceFile/AceFile2.png"></a>
+        <!-- みえない りんく -->
+      </div>
+      <!-- さんまいめ --><canvas id="can3" width="820" height="1440" style="background-color: #999;"></canvas>
+      <div class="btnbox"> <button class="btn" onclick="download('can3','hiddenLink3')">3枚目をダウンロード</button> <a id="hiddenLink3" download="img_AceFile/AceFile3.png"></a>
+        <!-- みえない りんく -->
+      </div>
+      <!-- いちまいめ --><canvas id="can4" width="820" height="1440" style="background-color: #999;"></canvas>
+      <div class="btnbox"> <button class="btn" onclick="download('can4','hiddenLink4')">4枚目をダウンロード</button> <a id="hiddenLink4" download="img_AceFile/AceFile4.png"></a>
+        <!-- みえない りんく -->
+      </div>
+      <div class="btnbox"> <button class="ALTbtn" type="button" onclick="display('altDisplay')">ALT用テキストを表示</button> </div>
+      <div id="altDisplay" style="Display:none">
+        <p class="koumoku">画像を説明するための代替テキストです。<br/>適宜書き換えてご使用ください。</p>
+        <p class="koumoku">1枚目</p>
+        <textarea class="ALT" id="ALT1" style="white-space: pre-wrap">ダミー</textarea>
+        <p class="koumoku">2枚目</p>
+        <textarea class="ALT" id="ALT2" style="white-space: pre-wrap">ダミー</textarea>
+        <p class="koumoku">3枚目</p>
+        <textarea class="ALT" id="ALT3" style="white-space: pre-wrap">ダミー</textarea>
+        <p class="koumoku">4枚目</p>
+        <textarea class="ALT" id="ALT4" style="white-space: pre-wrap">ダミー</textarea>
       </div>
     </div>
+    <p class="koumoku">エラーが出たとき </p>
+    <p>絵文字など特殊な文字を使用していないかご確認ください </p>
+    <p> <br>2020/10/1 公開
+      <br>2020/10/3 誤字修正、画像のフォントを統一
+      <br>2020/10/4 iOSで文字がはみ出してしまう問題を修正
+      <br>2021/10/24 つまみのずれと一部の記号が使えない問題をこっそり修正
+      <br>2021/10/30 一番上にタイトルが出るように
+      <br>2022/11/28 リニューアル
+      <br>2024/04/14 ALT生成機能実装
+    </p>
   </div>
-  <p class="koumoku">恋愛も性的関係もないパートナー </p>
-  <div class="flex">
-    <div class="inflex_label">
-      <p class="rangelabel">望む </p>
-    </div>
-    <div class="inflex_range"> <input type="range" list="list1" name="pa_1_2"> </div>
-    <div class="inflex_label">
-      <p class="rangelabel">望まない </p>
-    </div>
-  </div>
-  <p class="koumoku">恋愛関係のみのパートナー </p>
-  <div class="flex">
-    <div class="inflex_label">
-      <p class="rangelabel">望む </p>
-    </div>
-    <div class="inflex_range"> <input type="range" list="list1" name="pa_1_3"> </div>
-    <div class="inflex_label">
-      <p class="rangelabel">望まない </p>
-    </div>
-  </div>
-  <p class="koumoku">性的関係のみのパートナー </p>
-  <div class="flex">
-    <div class="inflex_label">
-      <p class="rangelabel">望む </p>
-    </div>
-    <div class="inflex_range"> <input type="range" list="list1" name="pa_1_4"> </div>
-    <div class="inflex_label">
-      <p class="rangelabel">望まない </p>
-    </div>
-  </div>
-</div>
-<p class="koumoku">パートナーとの同居を望みますか？ </p>
-<div class="flex">
-  <div class="inflex_label">
-    <p class="rangelabel">望む </p>
-  </div>
-  <div class="inflex_range"> <input type="range" list="list1" name="pa_2"> </div>
-  <div class="inflex_label">
-    <p class="rangelabel">望まない </p>
-  </div>
-</div>
-<p class="koumoku">結婚を望みますか？ </p>
-<div class="flex">
-  <div class="inflex_label">
-    <p class="rangelabel">望む </p>
-  </div>
-  <div class="inflex_range"> <input type="range" list="list1" name="pa_3"> </div>
-  <div class="inflex_label">
-    <p class="rangelabel">望まない </p>
-  </div>
-</div>
-<p class="koumoku">子供(実子に限らず)を望みますか？ </p>
-<div class="flex">
-  <div class="inflex_label">
-    <p class="rangelabel">はい </p>
-  </div>
-  <div class="inflex_range"> <input type="range" list="list1" name="pa_4"> </div>
-  <div class="inflex_label">
-    <p class="rangelabel">いいえ </p>
-  </div>
-</div>
-<p class="koumoku">パートナーの譲れない条件はありますか？※自由記述(140文字) </p> <textarea type="text" class="textarea_pa" name="pa_5" placeholder="改行は自動的に削除されます" maxlength="140" wrap="soft"></textarea>
-<h1>【プロフィール】</h1>
-<p class="koumoku">呼ばれたい名前(11文字) </p> <input type="text" title="呼ばれたい名前" name="name" maxlength="11">
-<p class="koumoku">住んでいるところ(6文字) </p> <input type="text" title="住んでいるところ" name="place" maxlength="6">
-<p class="koumoku">年代(9文字) </p> <input type="text" title="年代" name="old" maxlength="9">
-<p class="koumoku">現在自認しているセクシャリティ(16文字) </p> <input type="text" title="現在自認しているセクシャリティ" name="sexuality" maxlength="16">
-<p class="koumoku">＜こんな人と仲良くなりたい＞ </p> <label>
-  <input type="checkbox" name="kon" class="checkbox" value="1">セクシャリティーが似ている
-</option>
-</label> <br> <label>
-  <input type="checkbox" name="kon" class="checkbox" value="2">パートナー観が似ている
-</option>
-</label> <br> <label>
-  <input type="checkbox" name="kon" class="checkbox" value="3">気にしない
-</option>
-</label> <br>
-<p>その他:自由記述(63文字) </p> <textarea type="text" class="textarea_other" name="kon_other" placeholder="改行は自動的に削除されます" maxlength="63"></textarea>
-<p class="koumoku">＜好きなもの＞自由記述(84文字) </p> <textarea type="text" class="textarea_fav" name="favorite" placeholder="改行は自動的に削除されます" maxlength="84"></textarea>
-<p class="koumoku">＜仲良くしてくれる人は＞ </p> <label>
-  <input type="checkbox" name="naka" class="checkbox" value="1">DM
-</option>
-</label> <br> <label>
-  <input type="checkbox" name="naka" class="checkbox" value="2">リプ
-</option>
-</label> <br> <label>
-  <input type="checkbox" name="naka" class="checkbox" value="3">RT
-</option>
-</label> <br> <label>
-  <input type="checkbox" name="naka" class="checkbox" value="4">いいね
-</option>
-</label> <br>
-<p class="koumoku">一言どうぞ(132文字) </p> <textarea type="text" class="textarea_hitokoto" name="hitokoto" placeholder="改行は自動的に削除されます" maxlength="132"></textarea>
-<div class="btnbox"> <button class="btn" type="button" onclick="fontloaded();display()">完成！</button> </div>
-</form>
-<div id="display" style="display:none">
-  <p class="koumoku">内容を変更したいときは変更後「完成！」ボタンを再び押して下さい <br>ダウンロードボタンが機能しない場合画像を右クリックまたは長押しから画像を保存してください </p>
-  <!-- いちまいめ --><canvas id="can1" width="820" height="1440" style="background-color: #999;">お使いのブラウザには対応しておりません</canvas>
-  <div class="btnbox"> <button class="btn" onclick="download('can1','hiddenLink1')">1枚目をダウンロード</button> <a id="hiddenLink1" download="img_AceFile/AceFile1.png"></a>
-    <!-- みえない りんく -->
-  </div>
-  <!-- にまいめ --><canvas id="can2" width="820" height="1440" style="background-color: #999;"></canvas>
-  <div class="btnbox"> <button class="btn" onclick="download('can2','hiddenLink2')">2枚目をダウンロード</button> <a id="hiddenLink2" download="img_AceFile/AceFile2.png"></a>
-    <!-- みえない りんく -->
-  </div>
-  <!-- さんまいめ --><canvas id="can3" width="820" height="1440" style="background-color: #999;"></canvas>
-  <div class="btnbox"> <button class="btn" onclick="download('can3','hiddenLink3')">3枚目をダウンロード</button> <a id="hiddenLink3" download="img_AceFile/AceFile3.png"></a>
-    <!-- みえない りんく -->
-  </div>
-  <!-- いちまいめ --><canvas id="can4" width="820" height="1440" style="background-color: #999;"></canvas>
-  <div class="btnbox"> <button class="btn" onclick="download('can4','hiddenLink4')">4枚目をダウンロード</button> <a id="hiddenLink4" download="img_AceFile/AceFile4.png"></a>
-    <!-- みえない りんく -->
-  </div>
-</div>
-<p class="koumoku">エラーが出たとき </p>
-<p>絵文字など特殊な文字を使用していないかご確認ください </p>
-<p> <br>2020/10/1 公開
-  <br>2020/10/3 誤字修正、画像のフォントを統一
-  <br>2020/10/4 iOSで文字がはみ出してしまう問題を修正
-  <br>2021/10/24 つまみのずれと一部の記号が使えない問題をこっそり修正
-  <br>2021/10/30 一番上にタイトルが出るように
-  <br>2022/11/28 リニューアル
-</p>
-</div>
-<script type="text/javascript">//全体のロードが終わったら発火
-function drawcanvas() {
-  WebFont.load({
-    google: {
-      families: ['Noto+Sans+JP']
-    },
-    active: fontloaded //フォント読み込んだら発火
-  });
-}
+  <script type="text/javascript">//全体のロードが終わったら発火
+  function drawcanvas() {
+    WebFont.load({
+      google: {
+        families: ['Noto+Sans+JP']
+      },
+      active: fontloaded //フォント読み込んだら発火
+    });
+  }
 
-function fontloaded() {
-  //データ受け取りぞ～ん
-  //スライダー
-  function slider(x) {
-    return 205 + 750 * x / 100;
-  };
-  //値があるか
-  function exist(value) {
-    if (value === undefined) {
-      return false;
-    } else {
-      return value;
+  function fontloaded() {
+    //データ受け取りぞ～ん
+    //スライダー
+    function slider(x) {
+      return 180 + 750 * x / 100;//-25
+    };
+    //値があるか
+    function exist(value) {
+      if (value === undefined) {
+        return false;
+      } else {
+        return value;
+      }
+    }
+    //Canvasにひたすら書き込む
+    //文字色
+    const textcolor="rgba(105,37,160,0.7)";
+    //チェックマーク画像
+    const checkmark = new Image();
+    checkmark.src = "img_AceFile/checkmark.png";
+
+    //位置情報
+    const coords = [
+      ["370","155,470","390,470", "620,470", "155,520", "472,520", "155,570", "355,617", "860", "1040", "1255", "1510", "1750", "1975"],
+      ["387", "185,520", "415,520", "645,520", "185,570", "495,570", "185,620", "370,668", "890", "1115", "1355", "1557", "1745", "1945"],
+      ["412", "617", "800", "997", "1257", "1455", "1660", "110,1815"],
+      ["100,350", "100,480", "530,480", "380,585", "115,695", "115,745", "115,795", "140,975", "140,1210", "85,1420", "296,1420", "507,1420", "810,1420", "130,1620"]
+    ];
+    const fontSize=[
+      ["bold 40pt 'Noto Sans JP'", "", "", "", "", "", "", "bold 25pt 'Noto Sans JP'", "bold 40pt 'Noto Sans JP'", "", "", "", "", ""],
+      ["bold 40pt 'Noto Sans JP'", "", "", "", "", "", "", "bold 25pt 'Noto Sans JP'", "bold 40pt 'Noto Sans JP'", "", "", "", "", ""],
+      ["bold 40pt 'Noto Sans JP'", "", "", "", "", "", "", "bold 25pt 'Noto Sans JP'"],
+      ["bold 60pt 'Noto Sans JP'", "bold 40pt 'Noto Sans JP'", "", "bold 30pt 'Noto Sans JP'", "", "", "", "bold 30pt 'Noto Sans JP'", "bold 30pt 'Noto Sans JP'", "", "", "", "", "bold 30pt 'Noto Sans JP'"]
+    ];
+    const mapLines=new Map(
+      [
+        ["pa_5","5"],
+        ["kon_other","3"],
+        ["favorite","4"],
+        ["hitokoto","6"],
+      ]
+    );
+
+    let altText = "";
+    for (let formCount = 1; formCount <= document.forms.length; formCount++) {
+      //画像を読みこむ
+      loadImage('img_AceFile/base' + formCount + '.jpg', drawCanvas);
+      function loadImage(imageSrc, callback) {
+        const image = new Image();
+        image.onload = function() {
+          callback(image);
+        };
+        image.src = imageSrc;
+      }
+      function drawCanvas (image) {
+        //画像ロードが完了してからキャンバスの準備をする
+        const canvas = document.getElementById('can'+formCount);
+        const context = canvas.getContext('2d');
+        //キャンバスのサイズを画像サイズに合わせる
+        canvas.width = image.width;
+        canvas.height = image.height;
+        //キャンバスに画像を描画（開始位置0,0）
+        context.drawImage(image, 0, 0);
+        context.fillStyle = textcolor;
+        //対象フォームの情報を取得
+        const forms = document.forms["form"+formCount];
+        const formInputs = forms.querySelectorAll("input, textarea");
+        const formQuestions = forms.querySelectorAll("p.koumoku, p.case, p.memo");
+        let altTemp = [];
+
+        //altText+= '～～～～～' + formCount + '枚目～～～～～\n';//◯枚目
+        altText+= forms.querySelector('h1').innerText + '\n';//h1
+
+        formInputs.forEach((item, i) => {
+          context.font = fontSize[formCount-1][i];
+          switch (item.type) {
+            case 'text':
+            const coord = coords[formCount-1][i].split(',');
+            context.fillText(item.value, coord[0], coord[1]);
+            altTemp.push(item.value);
+            break;
+
+            case 'textarea':
+            const textarea = item.value.replace(/r?n/g, '');
+            altTemp.push(textarea);
+            WordCount = item.maxLength/mapLines.get(item.name);
+            for (let j = 0; j < mapLines.get(item.name); j++) {
+              const line = textarea.substr(j*WordCount,WordCount);
+              const coord = coords[formCount-1][i].split(',');
+              context.fillText(line, coord[0], Number(coord[1])+40*j);
+            }
+            break;
+
+            case 'checkbox':
+            //チェックマ～ク
+            if (i===0 || item.name!=forms.elements[i-1].name) {
+              altTemp.push("");
+            }
+            if (item.checked === true) {
+              const coord = coords[formCount-1][i].split(',');
+              context.drawImage(checkmark, coord[0], coord[1], 50, 50);
+              if (altTemp[altTemp.length-1].length!=0) {
+                altTemp[altTemp.length-1]+='、';
+              }
+              altTemp[altTemp.length-1]+=item.value;
+            }
+            break;
+
+            case 'radio':
+            //ラジオボタン
+            if (i===0 || item.name!=forms.elements[i-1].name) {
+              altTemp.push("");
+            }
+            if (item.checked === true) {
+              const coord = coords[formCount-1][i].split(',');
+              context.drawImage(checkmark, coord[0], coord[1], 50, 50);
+              altTemp[altTemp.length-1]+=item.value;
+            }
+            break;
+
+            case 'range':
+            context.fillText("●", slider(item.value), coords[formCount-1][i]);
+            if (item.value<20) {
+              altTemp.push("はい");
+            }else if (item.value<40) {
+              altTemp.push("ややはい");
+            }else if (item.value<60) {
+              altTemp.push("どちらでもない");
+            }else if (item.value<80) {
+              altTemp.push("ややいいえ");
+            }else if (item.value<100) {
+              altTemp.push("いいえ");
+            }
+            break;
+
+            default:
+            break;
+          }
+        });
+        let caseCount=0;
+        formQuestions.forEach((item, i) => {
+          altText += item.innerText.replace(/\(.*\)/g,"") ;
+          if (item.className!='case') {
+            altText += '「' + altTemp[i-caseCount] + '」\n';
+          }else {
+            caseCount++;
+          }
+        });
+        document.getElementById('ALT'+formCount).textContent = altText;
+        altText = ''
+      };
     }
   }
-  const form = document.forms["form1"];
-  //いちまいめ
-  const seku_1 = slider(form.elements["seku_1"].value);
-  const seku_1_1 = exist(form.elements["seku_1_1"].value);
-  const seku_1_2 = slider(form.elements["seku_1_2"].value);
-  const seku_1_3 = slider(form.elements["seku_1_3"].value);
-  const seku_2 = slider(form.elements["seku_2"].value);
-  const seku_3 = slider(form.elements["seku_3"].value);
-  const seku_4 = slider(form.elements["seku_4"].value);
-  const seku_5 = slider(form.elements["seku_5"].value);
-  const seku_other = form.elements["seku_other"].value;
-  //にまいめ
-  const roma_1 = slider(form.elements["roma_1"].value);
-  const roma_1_1 = exist(form.elements["roma_1_1"].value);
-  const roma_other = form.elements["roma_other"].value;
-  const roma_1_2 = slider(form.elements["roma_1_2"].value);
-  const roma_2 = slider(form.elements["roma_2"].value);
-  const roma_3 = slider(form.elements["roma_3"].value);
-  const roma_4 = slider(form.elements["roma_4"].value);
-  const roma_5 = slider(form.elements["roma_5"].value);
-  const roma_6 = slider(form.elements["roma_6"].value);
-  //さんまいめ
-  const pa_1_1 = slider(form.elements["pa_1_1"].value);
-  const pa_1_2 = slider(form.elements["pa_1_2"].value);
-  const pa_1_3 = slider(form.elements["pa_1_3"].value);
-  const pa_1_4 = slider(form.elements["pa_1_4"].value);
-  const pa_2 = slider(form.elements["pa_2"].value);
-  const pa_3 = slider(form.elements["pa_3"].value);
-  const pa_4 = slider(form.elements["pa_4"].value);
-  const pa_5 = form.elements["pa_5"].value.replace(/r?n/g, '');
-  const pa_5_1 = pa_5.substr(0, 28);
-  const pa_5_2 = pa_5.substr(28, 28);
-  const pa_5_3 = pa_5.substr(56, 28);
-  const pa_5_4 = pa_5.substr(84, 28);
-  const pa_5_5 = pa_5.substr(112, 28);
-  //よんまいめ
-  //名前
-  const name = form.elements["name"].value;
-  //住んでいるところ
-  const place = form.elements["place"].value;
-  //年齢
-  const old = form.elements["old"].value;
-  //セクシャリティー
-  const sexuality = form.elements["sexuality"].value;
-  //仲良くなりたい人
-  const kon = form.elements["kon"];
-  const kon_other = form.elements["kon_other"].value.replace(/r?n/g, '');
-  const kon_other_1 = kon_other.substr(0, 21);
-  const kon_other_2 = kon_other.substr(21, 21);
-  const kon_other_3 = kon_other.substr(42, 21);
-  //好きなもの
-  const favorite = form.elements["favorite"].value.replace(/r?n/g, '');
-  const favorite_1 = favorite.substr(0, 21);
-  const favorite_2 = favorite.substr(21, 21);
-  const favorite_3 = favorite.substr(42, 21);
-  const favorite_4 = favorite.substr(63, 21);
-  //仲良くしてくれる人
-  const naka = exist(form.elements["naka"]);
-  //一言
-  const hitokoto = form.elements["hitokoto"].value.replace(/r?n/g, '');
-  const hitokoto_1 = hitokoto.substr(0, 22);
-  const hitokoto_2 = hitokoto.substr(22, 22);
-  const hitokoto_3 = hitokoto.substr(44, 22);
-  const hitokoto_4 = hitokoto.substr(66, 22);
-  const hitokoto_5 = hitokoto.substr(88, 22);
-  const hitokoto_6 = hitokoto.substr(110, 22);
-  //Canvasにひたすら書き込む
-  //文字色
-  const textcolor="rgba(105,37,160,0.7)";
-  //チェックマーク画像
-  const checkmark = new Image();
-  checkmark.src = "img_AceFile/checkmark.png";
-  //ベースの画像を読み込むよ 1
-  (function () {
-    const image = new Image();
-    image.src = 'img_AceFile/base1.jpg';
-    image.onload = (function () {
-      //画像ロードが完了してからキャンバスの準備をする
-      const canvas = document.getElementById('can1');
-      const context = canvas.getContext('2d');
-      //キャンバスのサイズを画像サイズに合わせる
-      canvas.width = image.width;
-      canvas.height = image.height;
-      //キャンバスに画像を描画（開始位置0,0）
-      context.drawImage(image, 0, 0);
-      //ここから書き込み
-      context.fillStyle = textcolor;
-      context.textAlign = "center";
-      context.textBaseline = "middle";
-      context.font = "bold 40pt 'Noto Sans JP'";
-      context.fillText("●", seku_1, 353);
-      //チェックマ～ク
-      if (seku_1_1 === "1") {
-        context.drawImage(checkmark, 155, 470, 50, 50);
-      } else if (seku_1_1 === "2") {
-        context.drawImage(checkmark, 390, 470, 50, 50);
-      } else if (seku_1_1 === "3") {
-        context.drawImage(checkmark, 620, 470, 50, 50);
-      } else if (seku_1_1 === "4") {
-        context.drawImage(checkmark, 155, 520, 50, 50);
-      } else if (seku_1_1 === "5") {
-        context.drawImage(checkmark, 472, 520, 50, 50);
-      } else if (seku_1_1 === "その他") {
-        context.drawImage(checkmark, 155, 570, 50, 50);
-        context.font = "bold 25pt 'Noto Sans JP'";
-        context.fillText(seku_other, 535, 605);
-      }
-      context.font = "bold 40pt 'Noto Sans JP'";
-      context.fillText("●", seku_1_2, 840);
-      context.fillText("●", seku_1_3, 1020);
-      context.fillText("●", seku_2, 1234);
-      context.fillText("●", seku_3, 1488);
-      context.fillText("●", seku_4, 1730);
-      context.fillText("●", seku_5, 1955);
-    }); //onload
-  })();
-  //ベースの画像を読み込むよ 2
-  (function () {
-    const image = new Image();
-    image.src = 'img_AceFile/base2.jpg';
-    image.onload = (function () {
-      //画像ロードが完了してからキャンバスの準備をする
-      const canvas = document.getElementById('can2');
-      const context = canvas.getContext('2d');
-      //キャンバスのサイズを画像サイズに合わせる
-      canvas.width = image.width;
-      canvas.height = image.height;
-      //キャンバスに画像を描画（開始位置0,0）
-      context.drawImage(image, 0, 0);
-      //ここから書き込み
-      context.fillStyle = textcolor;
-      context.textAlign = "center";
-      context.textBaseline = "middle";
-      context.font = "bold 40pt 'Noto Sans JP'";
-      context.fillText("●", roma_1, 368);
-      //チェックマ～ク
-      if (roma_1_1 === "1") {
-        context.drawImage(checkmark, 185, 520, 50, 50);
-      } else if (roma_1_1 === "2") {
-        context.drawImage(checkmark, 415, 520, 50, 50);
-      } else if (roma_1_1 === "3") {
-        context.drawImage(checkmark, 645, 520, 50, 50);
-      } else if (roma_1_1 === "4") {
-        context.drawImage(checkmark, 185, 570, 50, 50);
-      } else if (roma_1_1 === "5") {
-        context.drawImage(checkmark, 495, 570, 50, 50);
-      } else if (roma_1_1 === "その他") {
-        context.drawImage(checkmark, 185, 620, 50, 50);
-        context.font = "bold 25pt 'Noto Sans JP'";
-        context.fillText(roma_other, 525, 655);
-      }
-      context.font = "bold 40pt 'Noto Sans JP'";
-      context.fillText("●", roma_1_2, 870);
-      context.fillText("●", roma_2, 1096);
-      context.fillText("●", roma_3, 1336);
-      context.fillText("●", roma_4, 1538);
-      context.fillText("●", roma_5, 1728);
-      context.fillText("●", roma_6, 1927);
-    }); //onload
-  })();
-  //ベースの画像を読み込むよ 3
-  (function () {
-    const image = new Image();
-    image.src = 'img_AceFile/base3.jpg';
-    image.onload = (function () {
-      //画像ロードが完了してからキャンバスの準備をする
-      const canvas = document.getElementById('can3');
-      const context = canvas.getContext('2d');
-      //キャンバスのサイズを画像サイズに合わせる
-      canvas.width = image.width;
-      canvas.height = image.height;
-      //キャンバスに画像を描画（開始位置0,0）
-      context.drawImage(image, 0, 0);
-      //ここから書き込み
-      context.fillStyle = textcolor;
-      context.textAlign = "center";
-      context.textBaseline = "middle";
-      context.font = "bold 40pt 'Noto Sans JP'";
-      context.fillText("●", pa_1_1, 393);
-      context.fillText("●", pa_1_2, 596);
-      context.fillText("●", pa_1_3, 782);
-      context.fillText("●", pa_1_4, 978);
-      context.fillText("●", pa_2, 1238);
-      context.fillText("●", pa_3, 1434);
-      context.fillText("●", pa_4, 1641);
-      context.font = "bold 25pt 'Noto Sans JP'";
-      context.textAlign = "left";
-      context.textBaseline = "middle";
-      context.fillText(pa_5_1, 110, 1815);
-      context.fillText(pa_5_2, 110, 1855);
-      context.fillText(pa_5_3, 110, 1895);
-      context.fillText(pa_5_4, 110, 1935);
-      context.fillText(pa_5_5, 110, 1975);
-    }); //onload
-  })();
-  //ベースの画像を読み込むよ 4
-  (function () {
-    const image = new Image();
-    image.src = 'img_AceFile/base4.jpg';
-    image.onload = (function () {
-      //画像ロードが完了してからキャンバスの準備をする
-      const canvas = document.getElementById('can4');
-      const context = canvas.getContext('2d');
-      //キャンバスのサイズを画像サイズに合わせる
-      canvas.width = image.width;
-      canvas.height = image.height;
-      //キャンバスに画像を描画（開始位置0,0）
-      context.drawImage(image, 0, 0);
-      //ここから書き込み
-      //名前
-      context.fillStyle = textcolor;
-      context.font = "bold 60pt 'Noto Sans JP'";
-      context.fillText(name, 100, 350);
-      //住んでいるところ
-      context.font = "bold 40pt 'Noto Sans JP'";
-      context.fillText(place, 100, 480);
-      //年5
-      context.fillText(old, 530, 480);
-      //セクシャリティー
-      context.font = "bold 30pt 'Noto Sans JP'";
-      context.fillText(sexuality, 380, 585);
-      //こんな人と仲良くなりたい
-      //チェックマ～ク
-      if (kon[0].checked === true) {
-        context.drawImage(checkmark, 115, 695, 50, 50);
-      }
-      if (kon[1].checked === true) {
-        context.drawImage(checkmark, 115, 745, 50, 50);
-      }
-      if (kon[2].checked === true) {
-        context.drawImage(checkmark, 115, 795, 50, 50);
-      }
-      context.font = "bold 30pt 'Noto Sans JP'";
-      context.fillText(kon_other_1, 140, 975);
-      context.fillText(kon_other_2, 140, 1015);
-      context.fillText(kon_other_3, 140, 1055);
-      //好きなもの
-      context.font = "bold 30pt 'Noto Sans JP'";
-      context.fillText(favorite_1, 140, 1210);
-      context.fillText(favorite_2, 140, 1250);
-      context.fillText(favorite_3, 140, 1290);
-      context.fillText(favorite_4, 140, 1330);
-      //仲良くしてくれる人
-      //チェックマ～ク
-      if (naka[0].checked === true) {
-        context.drawImage(checkmark, 85, 1420, 50, 50);
-      }
-      if (naka[1].checked === true) {
-        context.drawImage(checkmark, 296, 1420, 50, 50);
-      }
-      if (naka[2].checked === true) {
-        context.drawImage(checkmark, 507, 1420, 50, 50);
-      }
-      if (naka[3].checked === true) {
-        context.drawImage(checkmark, 810, 1420, 50, 50);
-      }
-      //ひとこと
-      context.font = "bold 30pt 'Noto Sans JP'";
-      context.fillText(hitokoto_1, 130, 1620);
-      context.fillText(hitokoto_2, 130, 1660);
-      context.fillText(hitokoto_3, 130, 1700);
-      context.fillText(hitokoto_4, 130, 1740);
-      context.fillText(hitokoto_5, 130, 1780);
-      context.fillText(hitokoto_6, 130, 1820);
-    }); //onload
-  })();
-}
-//ダウンロード するよ！
-function download(can, hiddenLink) {
-  let canvas = document.getElementById(can);
-  let link = document.getElementById(hiddenLink);
-  link.href = canvas.toDataURL();
-  link.click();
-}
-//キャンバスの表示
-function display() {
-  const a = document.getElementById("display");
-  a.style.display = "block";
-}
-</script>
+  //ダウンロード するよ！
+  function download(can, hiddenLink) {
+    let canvas = document.getElementById(can);
+    let link = document.getElementById(hiddenLink);
+    link.href = canvas.toDataURL();
+    link.click();
+  }
+  //キャンバスの表示
+  function display(id) {
+    const a = document.getElementById(id);
+    a.style.display = "block";
+  }
+  //エンター無効化
+  </script>
 </body>
 </html>
